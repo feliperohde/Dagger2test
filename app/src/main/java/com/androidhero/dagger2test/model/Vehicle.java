@@ -1,5 +1,7 @@
 package com.androidhero.dagger2test.model;
 
+import javax.inject.Inject;
+
 /**
  * Created by feliperohde on 2/27/16.
  */
@@ -7,6 +9,7 @@ public class Vehicle {
 
     private Motor motor;
 
+    @Inject
     public Vehicle(Motor motor) {
         this.motor = motor;
     }
