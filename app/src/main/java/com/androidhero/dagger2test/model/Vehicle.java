@@ -7,12 +7,11 @@ import javax.inject.Inject;
  */
 public class Vehicle {
 
-    private Motor motor;
+    @Inject
+    Motor motor;
 
     @Inject
-    public Vehicle(Motor motor) {
-        this.motor = motor;
-    }
+    public Vehicle() {}
 
     public void increaseSpeed(int value) {
         motor.accelerate(value);
